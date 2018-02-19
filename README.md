@@ -1,1 +1,2 @@
-# JavaCodeAnalyzer
+# JavaCodeAnalyz
+A java code analyzer
