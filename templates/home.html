@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Java Code Analyser</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            *
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,100,0.5)),url('static/bg.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.nav-bar
+{
+    background: rgb(0,0,0,0.5);
+    height: 80px;
+}
+
+.logo
+{
+    margin: 10px 50px;
+    height: 50px;
+}
+
+.menu
+{
+    float: right;
+    list-style: none;
+    margin: 20px;
+}
+
+.menu li
+{
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.menu li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    border: 1px solid white;
+    
+}
+
+.menu li.active a
+{
+    border: 1px solid white;
+}
+
+.menu li a:hover
+{
+    background: #fff;
+    transition: .4s;
+    color: #000;
+    
+}
+
+.logo img
+{
+    width: 150px;
+    height: auto;
+    float: left;
+}
+
+body
+{
+    font-family: monospace;
+}
+
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero
+{
+    position: absolute;
+    width: 1200px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+h1
+{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 225px;
+}
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="nav-bar">
+                 
+                    <img src="static/cap.png" class="logo">                    
+                
+            <ul class="menu">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/our_team">Our Team</a></li>
+            </ul>
+            </div>
+
+            <div class="hero">
+                <h1>Java Static Code Analyser</h1>
+            </div>
+        </header>
+    </body>
+</html>

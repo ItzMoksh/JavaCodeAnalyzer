@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Java Code Analyser</title>
+        <style type="text/css">
+            *
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-family: 15px;
+}
+
+.main-nav li.active a
+{
+    border: 1px solid white;
+}
+
+.main-nav li a:hover
+{
+    border: 1px solid white;
+}
+
+.logo img
+{
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+
+body
+{
+    font-family: monospace;
+}
+
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+    background: rgb(0,0,0,0.5);
+    height: 80px;
+    
+}
+
+.table_cell
+{
+    position: absolute;
+    width: 1200px;
+    margin-left: 25px;
+    margin-top: 100px;
+    color: aliceblue
+}
+
+p
+{
+    position: fixed;
+
+}
+        </style>
+    </head>
+    <body style="background-image:url('static/bg.jpg')">      
+                <div class="row">
+                        <div class="logo">
+                            <img src="static/cap.png">
+                </div>
+            <ul class="main-nav">
+                <li><a href="/">Home</a> </li>
+                <li><a href="/login">Login</a></li>
+                <li class="active"><a href="/about">About</a></li>
+                <li><a href="/our_team">Our Team</a></li>
+            </ul>
+           
+        </div>
+           <div class="table_cell">
+                <p> <h1>This application is like static code analyzer. <br /> &nbsp;
+                    User will submit their code and based on some configuration file, code will be analyzed.<br /> &nbsp;
+                    User can select code optimizer parameter as per their application need.<br /> &nbsp;
+                    There is some level defined in code optimizer and we can select the corresponding level with
+                    respect to application need.</h1>
+                </p>
+            </div>
+
+    </body>
+</html>           

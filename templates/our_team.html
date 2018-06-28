@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Java Code Analyser</title>
+        <style type="text/css">
+            *
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header
+{
+    background-image: linear-gradient(#34495e,#34495e);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.nav-bar
+{
+    background: rgb(0,0,0,0.5);
+    height: 80px;
+}
+
+.logo
+{
+    margin: 10px 50px;
+    height: 50px;
+}
+
+.menu
+{
+    float: right;
+    list-style: none;
+    margin: 20px;
+}
+
+.menu li
+{
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.menu li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    border: 1px solid white;
+    
+}
+
+.menu li.active a
+{
+    border: 1px solid white;
+}
+
+.menu li a:hover
+{
+    background: #fff;
+    transition: .4s;
+    color: #000;
+    
+}
+
+.logo img
+{
+    width: 150px;
+    height: auto;
+    float: left;
+}
+
+body
+{
+    font-family: monospace;
+}
+
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.team-selection
+{
+    overflow: hidden;
+    text-align: center;
+    background: #34495e;
+    padding: 60px;
+}
+.team.section h1
+{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 40px;
+}
+.border
+{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: #3498db;
+    margin-bottom: 40px;
+}
+.ps
+{
+    margin-bottom: 40px;
+}
+.ps a
+{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.ps a img
+{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+.ps a:hover > img{
+    filter: none;
+}
+.section
+{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+.section:target
+{
+    height: auto;
+}
+.name
+{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="nav-bar">
+                 
+                    <img src="/static/cap.png" class="logo">                    
+                
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/about">About</a></li>
+                <li class="active"><a href="/our_team">Our Team</a></li>
+            </ul>
+            </div>
+
+        <div class="team-selection">
+            <h1>Our Team</h1>
+            <span class="border"></span>
+        <div class="ps">
+            <a href="#p1"><img src="static/p1.png" alt=""></a>
+            <a href="#p2"><img src="static/p2.png" alt=""></a>
+            <a href="#p3"><img src="static/p3.jpg" alt=""></a>
+            <a href="#p4"><img src="static/p4.png" alt=""></a>
+            <a href="#p5"><img src="static/p1.png" alt=""></a>
+        </div>
+        <div class="section" id="p1">
+            <span class="name">Moksh Talreja</span>
+            <span class="border"></span>
+            <p>
+                Some text-A programmer, developer, dev, coder, or software engineer is a person who creates computer software. The term computer programmer can refer to a specialist in one area of computer or to a generalist who writes code for many kinds of software
+            </p>
+        </div>
+        <div class="section" id="p2">
+            <span class="name">Moulie Sharma</span>
+            <span class="border"></span>
+            <p>
+                Some text-A programmer, developer, dev, coder, or software engineer is a person who creates computer software. The term computer programmer can refer to a specialist in one area of computer or to a generalist who writes code for many kinds of software
+            </p>
+        </div>
+        <div class="section" id="p3">
+            <span class="name">Siddharth Godavarthi</span>
+            <span class="border"></span>
+            <p>
+                Some text-A programmer, developer, dev, coder, or software engineer is a person who creates computer software. The term computer programmer can refer to a specialist in one area of computer or to a generalist who writes code for many kinds of software
+            </p>
+        </div>
+        <div class="section" id="p4">
+            <span class="name">Tanmay Jain</span>
+            <span class="border"></span>
+            <p>
+                Some text-A programmer, developer, dev, coder, or software engineer is a person who creates computer software. The term computer programmer can refer to a specialist in one area of computer or to a generalist who writes code for many kinds of software
+            </p>
+        </div>
+        <div class="section" id="p5">
+            <span class="name">Tulika Singh</span>
+            <span class="border"></span>
+            <p>
+                Some text-A programmer, developer, dev, coder, or software engineer is a person who creates computer software. The term computer programmer can refer to a specialist in one area of computer or to a generalist who writes code for many kinds of software
+            </p>
+        </div>
+        
+        </div>
+    </header>
+    </body>
+</html>

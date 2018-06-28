@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login Page</title>
+		<style type="text/css">
+			*
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+.row
+{
+    background: rgb(0,0,0,0.5);
+    height: 80px;
+}
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-family: 15px;
+}
+
+.main-nav li.active a
+{
+    border: 1px solid white;
+}
+
+.main-nav li a:hover
+{
+    border: 1px solid white;
+}
+
+.logo img
+{
+    width: 250px;
+    height: auto;
+    float: left;
+}
+
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url('static/bg.jpg');
+	background-size: cover;
+	font-family: sans-serif;
+}
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+.loginBox
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+	height: 420px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5);
+}
+.user
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-100px/2);
+	left: calc(50% - 50px);
+}
+h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	color: #efed40;
+	text-align: center;
+}
+.loginBox p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.loginBox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+::placeholder
+{
+	color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: #c226ff;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.loginBox input[type="submit"]:hover
+{
+	background: #efed40;
+	color: #262626;
+}
+.loginBox a
+{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+		</style>
+	</head>
+	<body>      
+			<div class="row">
+							<div class="logo">
+								<img src="static/cap.png">
+					        </div>
+				<ul class="main-nav">
+					<li><a href="/">Home</a> </li>
+					<li class="active"><a href="/login">Login</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/our_team">Our Team</a></li>
+				</ul>
+			   
+			</div>
+
+		<div class="loginBox">
+			<h2>Log In Here</h2>
+			<form action="/index" method="post">
+				<p>Username</p>
+				<input type="text" name="uname" placeholder="Enter Username">
+				<p>Password</p>
+				<input type="password" name="pass" placeholder="password">
+				<input type="submit" value="Sign In">
+				<a href="#">Forgot Password</a>
+			</form>
+		</div>
+	</body>
+</html>

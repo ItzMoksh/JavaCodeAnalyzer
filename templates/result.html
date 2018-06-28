@@ -1,0 +1,243 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,100,0.5)),url('static/bg.jpg');
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	font-family: sans-serif;
+}
+.loginBox
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+	height: 300px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.5);
+}
+.user
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-100px/2);
+	left: calc(50% - 50px);
+}
+h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	color: #efed40;
+	text-align: center;
+}
+.loginBox p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+
+.loginBox a
+{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	font-family: sans-serif;
+}
+.loginBox
+{
+	position: absolute;
+	top: 63.6%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 755px;
+	height: 600px;
+	padding: 0px 70px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5);
+}
+.loginBox1
+{
+	position: absolute;
+	top: 13.7%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 755px;
+	height: 60px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5);
+}
+.user
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-100px/2);
+	left: calc(50% - 50px);
+}
+h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	color: white;
+	text-align: center;
+}
+.loginBox p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: white;
+}
+.loginBox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid white;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: white;
+	font-size: 16px;
+}
+::placeholder
+{
+	color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 150px;
+	color: white;
+	font-size: 16px;
+	background: #c226ff;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.loginBox input[type="submit"]:hover
+{
+	background: #efed40;
+	color: #262626;
+}
+.loginBox a
+{
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+	</style>
+</head>
+<body>
+	<div class="loginBox1">
+		<form method="post" action="/show">
+			<input type="text" name="fname" value="{{ fn }}">
+			<div class="btn-group">
+			<input class="btn btn-primary" type="submit"  name="submit" value="Keywords">
+			<input class="btn btn-primary" type="submit" name="submit" value="Variables">
+			<input class="btn btn-primary" type="submit" name="submit" value="Classes">
+			<input type="submit" name="submit" class="btn btn-primary" value="Methods">
+			<input type="submit" name="submit" class="btn btn-primary" value="Loops">
+			<input type="submit" name="submit" class="btn btn-primary" value="Conditions">
+			<input type="submit" name="submit" class="btn btn-primary" value="Back">
+			</div>
+		</form>
+	</div>	
+	<div class="loginBox">
+			{% if Keys %}
+				<h3>
+				Keywords: 
+					{% for z in Keys %}
+						{{ z }}:{{ Keys.get(z) }}<br> 
+					{% endfor %} <br> </h3>
+			{% endif %}		
+			
+
+			{% if Vars %}
+				<h3>
+					Total Number of Variables: {{ count }} <br>
+					Variables: 
+						{% for z in Vars %}
+							{{ z }}:{{ Vars.get(z) }} <br> 
+						{% endfor %} <br> 
+				</h3>
+			{% endif %}
+			
+
+			{% if Class %}
+				<h3>
+					Classes: 
+						{% for x in Class %}
+							{{ x }} <br> 
+						{% endfor %} <br> 
+				</h3>
+			{% endif %}
+			
+
+			{% if Meth %}
+				<h3>
+					Methods: 
+						{% for y in Meth %}
+							{{ y }} <br> 
+						{% endfor %} <br> 
+				</h3>
+			{% endif %}
+			
+
+			{% if Loops %}
+				<h3>
+					Loops: 
+						{% for z in Loops %}
+							{{ Loops.get(z) }}:{{ z }} <br> 
+						{% endfor %} <br> 
+				</h3>
+			{% endif %}
+			
+
+			{% if Cond %}
+				<h3>
+					Conditions: 
+						{% for z in Cond %}
+							{{ Cond.get(z) }}:{{ z }} <br> 
+						{% endfor %} <br> 
+				</h3>
+			{% endif %}
+	</div>	
+</body>
+</html>
